@@ -1,0 +1,87 @@
+---
+layout: default
+breadcrumb: true
+header:
+   image_fullwidth: title.jpg
+---
+<div class="row t30">
+	<div class="medium-8 columns medium-push-4">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				<div itemprop="name">
+					<h1>{{ page.fname }} {{ page.lname }}</h1>
+				</div>
+			</header>
+
+			{% if page.teaser %}
+			<p class="teaser" itemprop="description">
+				{{ page.teaser }}
+			</p>
+			{% endif %}
+
+			<div >
+			{{ content }}
+
+			<div itemprop="name">
+
+		</div>
+
+
+			</div>
+
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	<div class="medium-4 columns medium-pull-8">
+		<aside>
+			<div class="border-dotted radius b30">
+				<figure>
+					<img src="{{ site.urlimg }}/people/{{ page.pic }}" width="970" alt="{{ page.title escape_once }}" itemprop="image">
+					{% if page.image.caption_url && page.image.caption %}
+					<figcaption class="text-right">
+						<a href="{{ page.image.caption_url }}">{{ page.image.caption }}</a>
+					</figcaption>
+					{% elsif page.image.caption %}
+					<figcaption class="text-right">
+						{{ page.image.caption }}
+					</figcaption>
+					{% endif %}
+				</figure>
+
+				{% if page.website contains  'http' %}
+		      {% assign ws =  page.website %}
+		    {% else %}
+		      {% capture ws %}http://www.cse.chalmers.se/~{{ page.cid }}{% endcapture %}
+		    {% endif %}
+
+		    {% if page.email contains  '@' %}
+		      {% assign em =  page.email %}
+		    {% else %}
+		      {% capture em %}{{ page.cid }}@chalmers.se{% endcapture %}
+		    {% endif %}
+
+		    {% if page.publications contains  'http' %}
+		      {% assign pub =  page.publications %}
+		    {% else %}
+		      {% capture pub %}http://publications.lib.chalmers.se/rweb/index.xsql?personID={{ page.cid }}{% endcapture %}
+		    {% endif %}
+
+
+			  </p>Email: {{ em }} </p>
+				</p>{% if page.telephone %} Telephone: {{ page.telephone}} {% endif %}</p>
+				<p>{% if page.address %} Address: {{ page.address}} {% endif %}</p>
+				<a  class="small-link primary-link"  href="{{ pub }}">Publications </a>
+				<p class="text-left">
+					<a href="{{ ws }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-website.svg" width="50" height="50"></a>
+					{% if page.github %}<a href="{{ page.github }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-github.svg" width="50" height="50"></a>{% endif %}
+					{% if page.linkedin %}<a href="{{ page.linkedin }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-linkedin.svg" width="50" height="50"></a>{% endif %}
+					{% if page.researchgate %}<a href="{{ page.researchgate }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-researchgate.png" width="50" height="50"></a>{% endif %}
+					{% if page.googlescholar %}<a href="{{ page.googlescholar }}"><img  src="{{ site.url }}{{ site.baseurl }}/assets/icons/icon-googlescholar.png" width="50" height="50"></a>{% endif %}
+
+				</p>
+			</div>
+		</aside>
+	</div><!-- /.medium-4.columns -->
+
+</div><!-- /.row -->

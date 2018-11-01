@@ -1,0 +1,87 @@
+- title: Chalmers Security Lab
+  url: "/"
+  side: left
+
+# - title: Home
+#  url: "/ /"
+#  side: right
+
+#- title: Research Areas
+#  url: "/research/"
+#  side: right
+#  dropdown:
+#  - title: "System Security"
+#    url: "/syssecurity/"
+#  - title: "Cryptography"
+#    url: "/cryptography/"
+#  - title: "Software Security"
+#    url: "/softwaresecurity/"
+#  - title: "Privacy"
+#    url: "/priavcy/"
+
+
+- title: News
+  url: "/news/"
+  side: left
+
+- title: Education
+  url: "/secspec/"
+  side: left
+
+- title: "Projects"
+  url: "https://research.chalmers.se"
+  side: left
+  dropdown:
+  - title: "UNITED-GRID"
+    url: "https://research.chalmers.se/project/7801"
+  - title: "DecentLP"
+    url: "https://research.chalmers.se/project/6238"
+  - title: "RICS"
+    url: "https://research.chalmers.se/project/6438"
+  - title: "PROSECUTOR"
+    url: "https://research.chalmers.se/project/5376"
+  - title: "FlexCSP"
+    url: "https://research.chalmers.se/project/7125"
+  - title: "PolUser"
+    url: "http://www.cse.chalmers.se/~gersch/"
+  - title: "DataBin"
+    url: "http://www.cse.chalmers.se/research/databin/"
+  - title: "AppFlow"
+    url: "https://research.chalmers.se/en/project/6231"
+  - title: "Heavens"
+    url: "https://research.chalmers.se/en/project/5809"
+  - title: "Securit"
+    url: "http://www.foi.se/en/Our-Knowledge/Information-Security-and-Communication/Information-Security/Projects/SECURIT/"
+  - title: "SeFram"
+    url: "https://research.chalmers.se/en/project/6225"
+  - title: "PRECIS"
+    url: "https://research.chalmers.se/en/project/6237"
+  - title: "Swiss Sense Synergy"
+    url: "https://research.chalmers.se/en/project/6257"
+  - title: "BEAT"
+    url: "https://research.chalmers.se/en/project/6239"
+  - title: "PriSecIoT"
+    url: "https://www.chalmers.se/sv/projekt/Sidor/FIoT.aspx"
+  - title: "SEAFRONT"
+    url: "https://www.chalmers.se/sv/projekt/Sidor/SEAFRONT.aspx"
+  - title: "CRYPTACUS"
+    url: "http://www.cse.chalmers.se/~aikmitr/Projects.html"
+  - title: "PPIDR"
+    url: "http://www.cse.chalmers.se/~aikmitr/Projects.html"
+
+
+
+#- title: Publications
+#  url: "/publications/"
+#  side: right
+
+- title: People
+  url: "/people/"
+  side: left
+
+
+
+
+#- title: "About"
+#  url: "/about/"
+#  side: right

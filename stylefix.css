@@ -1,0 +1,15 @@
+.content {
+	min-height: 100%;
+	margin: 0 auto -233px;
+}
+
+.push, .alwaysbottomfooter {
+	height: 233px;
+}
+
+.abstract {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid blue;
+    width: 70%;
+}

@@ -1,0 +1,30 @@
+---
+layout: blankdefault
+format: post
+---
+<div class="row t30">
+	<article itemscope itemtype="http://schema.org/Article">
+		<header>
+			<div itemprop="name">
+				<h1>{{ page.title }}</h1>
+			</div>
+		</header>
+
+		<div itemprop="articleSection">
+		{{ content }}
+		</div>
+	</article>
+
+	{% if page.sidebar == "left" %}
+	<div class="medium-4 columns medium-pull-8">
+		{% include _sidebar.html %}
+	</div><!-- /.medium-4.columns -->
+	{% endif %}
+
+
+	{% if page.sidebar == "right" %}
+	<div class="medium-4 columns">
+		{% include _sidebar.html %}
+	</div><!-- /.medium-4.columns -->
+	{% endif %}
+</div><!-- /.row -->

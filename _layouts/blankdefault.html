@@ -1,0 +1,28 @@
+---
+layout: compress
+---
+<!doctype html>
+<html class="no-js" lang="{% if site.language == nil %}en{% else %}{{ site.language }}{% endif %}">
+<head>
+	{% include _head.html %}
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylefix.css" />
+</head>
+<body id="top-of-page" class="{{ page.format }}">
+	{% unless page.skip_boilerplate %}
+	{% include _navigation.html %}
+	{% endunless %}
+
+	<div class='content'>
+	{{ content }}
+	<div class="push"></div>
+	</div>
+
+	{% unless page.skip_boilerplate %}
+	<div class="alwaysbottomfooter">
+	{% include _footer.html %}
+	</div>
+	{% endunless %}
+
+	{% include _footer_scripts.html %}
+</body>
+</html>

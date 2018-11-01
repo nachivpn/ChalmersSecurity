@@ -1,0 +1,57 @@
+---
+layout: blankdefault
+format: post
+---
+<div class="row t30">
+	<article itemscope itemtype="http://schema.org/Article">
+		<header>
+			<div itemprop="name">
+                <p style="font-variant: small-caps; text-align: center"> Thesis for the degree of doctor of philosophy</p>
+
+				<h1 style="text-align: center"><a href="/research/group/security/{{ page.folder }}/{{page.full}}">{{ page.title }}</a></h1>
+			</div>
+		</header>
+
+		<div itemprop="articleSection">
+            <h4 style="text-align: center; margin-bottom: 50px;">{{page.author}}<br />{{page.date}}</h4>
+
+            {{ content }}
+
+            <div>
+            {{ page.abstract }}
+            </div>
+            
+            <div style="border-top: 1px solid #333; padding-top: 10px; margin-bottom: 0; margin-top: 50px; text-align: right">&nbsp;</div>
+            <h2 style="margin-top: 0px"><a href="/research/group/security/{{ page.folder }}/{{ page.intro }}">Introduction</a></h2>
+
+            {% for paper in page.papers %}
+                <p style="font-variant: small-caps; border-top: 1px solid #333; padding-top: 10px; margin-bottom: 0; margin-top: 50px; text-align: right">
+                    <span style="font-weight: bold">Paper {{ forloop.index }}</span>
+                </p>
+                <h2 style="margin-top: 0px">
+                    <a href="/research/group/security/{{ page.folder }}/{{ paper.file }}">
+                        {{ paper.name }}{% if paper.subtitle %}: 
+                            <span style="font-size: 80%"> {{ paper.subtitle }} </span>
+                        {% endif %}
+                    </a>
+                </h2>
+                <p style="text-align: right"> By {{ paper.authors }} </p>
+                <div> {{ paper.abstract }} </div>
+                <p style="text-align: right"> Published in {{ paper.published }} </p>
+            {% endfor %}
+		</div>
+	</article>
+
+	{% if page.sidebar == "left" %}
+	<div class="medium-4 columns medium-pull-8">
+		{% include _sidebar.html %}
+	</div><!-- /.medium-4.columns -->
+	{% endif %}
+
+
+	{% if page.sidebar == "right" %}
+	<div class="medium-4 columns">
+		{% include _sidebar.html %}
+	</div><!-- /.medium-4.columns -->
+	{% endif %}
+</div><!-- /.row -->
