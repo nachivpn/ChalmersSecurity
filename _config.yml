@@ -30,9 +30,9 @@ category-list: [professor, postdoc, phd, former-member]
 #
 
 # server config
-url: 		'http://www.cse.chalmers.se'
+url: 		'https://www.cse.chalmers.se'
 baseurl: 	'/research/group/security'
-urlimg: 	'http://www.cse.chalmers.se/research/group/security/images/'
+urlimg: 	'https://www.cse.chalmers.se/research/group/security/images/'
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.
