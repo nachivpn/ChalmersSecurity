@@ -6,8 +6,8 @@ pic: riccardo.jpg
 cid : riccardo  # for creating email/web addresss
 permalink: "/riccardo/"
 email: "riccardo.scandariato@cse.gu.se"
-website: "http://www.scandariato.eu/"
-publications: "http://www.scandariato.eu/pubs"
+website: "http://scandariato.org"
+publications: "http://scandariato.org/pubs"
 
 
 categories: people
