@@ -25,7 +25,7 @@ widget1:
 
 widget2:
   title: "Secure Software Engineering"
-  url: 'http://www.scandariato.eu'
+  url: 'http://www.scandariato.org'
   image: 'threat.jpg'
   text: '</ul>
   <li>Security and Privacy by design</li>
